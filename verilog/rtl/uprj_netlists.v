@@ -23,6 +23,15 @@
     `include "gl/user_project_wrapper.v"
     `include "gl/user_proj_example.v"
 `else
-    `include "user_project_wrapper.v"
-    `include "user_proj_example.v"
+    `include "./user_project_wrapper.v"
+    `include "./io_expander/user_proj_example.v"
+    `include "./io_expander/gpio_ssp.v" 
+    `include "./io_expander/peripheral_top.v" 
+    `include "./io_expander/wishbone2apb.v" 	
+    
+    
+    
+    
+    
+    
 `endif

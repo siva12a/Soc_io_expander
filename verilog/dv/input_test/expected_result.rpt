@@ -1,0 +1,13 @@
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading io_ports.hex
+io_ports.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+VCD info: dumpfile io_ports.vcd opened for output.
+GPI state = 10101010 
+GPI state = 10101010 
+GPI state = 10101010 
+GPI state = 10101010 
+GPIO state = 10101010101010100000000000000000 
+Monitor: Test 1 Mega-Project IO (RTL) Passed
+rm io_ports.elf io_ports.vvp
+
