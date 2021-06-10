@@ -35,7 +35,7 @@ set ::env(CLOCK_PERIOD) "40"
 
 set ::env(FP_SIZING) absolute
 #set ::env(FP_CORE_UTIL) 0.40
-set ::env(DIE_AREA) "0 0 500 500"
+set ::env(DIE_AREA) "0 0 500 200"
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -48,15 +48,15 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 #set ::env(PL_TARGET_DENSITY) [ expr ($::env(FP_CORE_UTIL)+5) / 100.0 ]
 
 
-
-set ::env(PL_BASIC_PLACEMENT) 1
-set ::env(PL_TARGET_DENSITY) 0.05
+set ::env(PL_RANDOM_GLB_PLACEMENT) 1
+set ::env(PL_BASIC_PLACEMENT) 0
+set ::env(PL_TARGET_DENSITY) 0.30
 
 # If you're going to use multiple power domains, then keep this disabled.
 set ::env(RUN_CVC) 0
 set ::env(ROUTING_CORES) 10
 
-
-
-
+set ::env(GLB_RT_OBS) "met5 0 0 $::env(DIE_AREA)"
+set ::env(GLB_RT_OBS) "met6 0 0 $::env(DIE_AREA)"
+set ::env(GLB_RT_OBS) "met4 0 0 $::env(DIE_AREA)"
 

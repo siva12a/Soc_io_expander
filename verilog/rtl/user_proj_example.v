@@ -97,7 +97,7 @@ module user_proj_example #(
     wire  [31:0]    w_gpi;
     wire  [31:0]    w_gpo;
     wire  [31:0]    w_gpio_oe;
-    
+  
     wire  w_hb_o;
    
    
@@ -109,6 +109,9 @@ module user_proj_example #(
    
    assign io_out[36] = w_hb_o;
    assign io_oeb[36] = 1'b0;
+   
+   
+   
    
    
   peripheral_top  peripheral_top(
