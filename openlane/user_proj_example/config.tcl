@@ -26,16 +26,20 @@ set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/user_proj_example.v \
 	$script_dir/../../verilog/rtl/wishbone2apb.v"
 	
-	
+#set ::env(EXTRA_LEFS) "\
+#	/home/siva/Documents/skywater_pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef \
+#	/home/siva/Documents/skywater_pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef \
+#	/home/siva/Documents/skywater_pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef \
+#	/home/siva/Documents/skywater_pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef"
 	
 
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
-set ::env(CLOCK_PERIOD) "40"
+set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
 #set ::env(FP_CORE_UTIL) 0.40
-set ::env(DIE_AREA) "0 0 500 200"
+set ::env(DIE_AREA) "0 0 500 500"
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -50,13 +54,15 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_RANDOM_GLB_PLACEMENT) 1
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.30
+set ::env(PL_TARGET_DENSITY) 0.01
 
 # If you're going to use multiple power domains, then keep this disabled.
-set ::env(RUN_CVC) 0
+#set ::env(RUN_CVC) 0
 set ::env(ROUTING_CORES) 10
 
-set ::env(GLB_RT_OBS) "met5 0 0 $::env(DIE_AREA)"
-set ::env(GLB_RT_OBS) "met6 0 0 $::env(DIE_AREA)"
-set ::env(GLB_RT_OBS) "met4 0 0 $::env(DIE_AREA)"
+#set ::env(GLB_RT_OBS) "met5 0 0 $::env(DIE_AREA)"
+#set ::env(GLB_RT_OBS) "met6 0 0 $::env(DIE_AREA)"
+#set ::env(GLB_RT_OBS) "met6 0 0 $::env(DIE_AREA)"
+#set ::env(GLB_RT_OBS) "li1 $::env(DIE_AREA)"
+
 

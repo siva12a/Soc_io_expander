@@ -85,6 +85,10 @@ module user_proj_example #(
 
     // LA
     assign la_data_out = 128'h0000_0000_0000_0000_0000_0000_0000_0000;
+
+    
+    
+    
     
     wire  w_wbs_ack_o;
     wire  [31:0] w_wbs_dat_o; 
@@ -102,15 +106,15 @@ module user_proj_example #(
    
    
    
-   assign io_out[31:0] = w_gpo;
+  assign io_out[31:0] = w_gpo;
    assign io_oeb[31:0] = w_gpio_oe[31:0];
    assign w_gpi = io_in[31:0];
    
    
    assign io_out[36] = w_hb_o;
    assign io_oeb[36] = 1'b0;
-   
-   
+ 
+ 
    
    
    
@@ -137,28 +141,7 @@ module user_proj_example #(
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
+ 
 endmodule
 
 `default_nettype wire
