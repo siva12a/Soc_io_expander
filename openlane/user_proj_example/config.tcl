@@ -35,11 +35,11 @@ set ::env(VERILOG_FILES) "\
 
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "40"
 
 set ::env(FP_SIZING) absolute
 #set ::env(FP_CORE_UTIL) 0.40
-set ::env(DIE_AREA) "0 0 500 500"
+set ::env(DIE_AREA) "0 0 500 200"
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -54,7 +54,7 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_RANDOM_GLB_PLACEMENT) 1
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.01
+set ::env(PL_TARGET_DENSITY) 0.05
 
 # If you're going to use multiple power domains, then keep this disabled.
 #set ::env(RUN_CVC) 0
